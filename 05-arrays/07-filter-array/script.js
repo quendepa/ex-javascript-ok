@@ -1,0 +1,117 @@
+/* becode/javascript
+ *
+ * /05-arrays/07-filter-array/script.js - 5.7: filtrer un tableau
+ *
+ * coded by leny@BeCode
+ * started at 26/10/2018
+ */
+
+// NOTE: don't focus on the existing code structure for now.
+// You will have time to focus on it later.
+
+(() => {
+    const people = [
+        {
+            firstname: "Dreddy",
+            lastname: "Nussgen",
+            age: 70,
+        },
+        {
+            firstname: "Yves",
+            lastname: "Sear",
+            age: 49,
+        },
+        {
+            firstname: "Marcel",
+            lastname: "Cowderay",
+            age: 59,
+        },
+        {
+            firstname: "Dag",
+            lastname: "Binnall",
+            age: 31,
+        },
+        {
+            firstname: "Horten",
+            lastname: "Claesens",
+            age: 75,
+        },
+        {
+            firstname: "Charmian",
+            lastname: "Harnes",
+            age: 10,
+        },
+        {
+            firstname: "Sean",
+            lastname: "Littlejohns",
+            age: 37,
+        },
+        {
+            firstname: "Hazlett",
+            lastname: "Sprouls",
+            age: 87,
+        },
+        {
+            firstname: "Marcel",
+            lastname: "Hasted",
+            age: 66,
+        },
+        {
+            firstname: "Cary",
+            lastname: "Summerson",
+            age: 15,
+        },
+        {
+            firstname: "Feodor",
+            lastname: "Ollett",
+            age: 56,
+        },
+        {
+            firstname: "Kelly",
+            lastname: "Ranahan",
+            age: 62,
+        },
+        {
+            firstname: "Madelene",
+            lastname: "Davie",
+            age: 14,
+        },
+        {
+            firstname: "Bent",
+            lastname: "Karpe",
+            age: 82,
+        },
+        {
+            firstname: "Reinaldo",
+            lastname: "Grimbleby",
+            age: 81,
+        },
+    ];
+    document.getElementById("run").addEventListener("click", () => {
+        function suffisammentGrand() {
+            let arrayPlus18 = [];
+            for (let i = 0; i < people.length; i++) { 
+                let age = people[i].age ; 
+                if (age>=18){
+                    // push dans tableau arrayPlus18
+                    arrayPlus18.push(people[i]);
+                    
+                }
+            } 
+            console.log(arrayPlus18);
+              
+            
+            // return age >= 18;
+            // 1 récupérer age
+            // 2 comparer l'age avec tes conditions
+            // 3 refaire tableau avec personne sup 18
+            // 4 afficher
+        }
+        suffisammentGrand();
+        // var filtre = people.filter(suffisammentGrand);
+        // console.log(filtre);
+        
+
+
+    });
+})();
